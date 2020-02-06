@@ -2,8 +2,24 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>タイトル</title>
+	<title>Wikipedia</title>
+	<style>
+	body{
+		font-family:　"遊ゴシック", "Yu Gothic", YuGothic,sans-serif;
+		background: #e6e6fa;
+	}.button{
+		 border-radius: 10%;
+		 background: #afeeee;
+	}.button:hover{
+		 background: #00eeee;
+	}
+	</style>
 </head>
 <body>
+<form action='/' method="get">
+		<input type="text" name="keyword">
+		<input type="submit" value="検索" class="button">
+	</form>
+	<%= @result %>
 </body>
 </html>
